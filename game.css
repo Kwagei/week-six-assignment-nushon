@@ -1,0 +1,94 @@
+body{
+    background-color: rgb(235, 184, 140);
+    color: rgb(235, 184, 140);;
+}
+
+#my_div{
+    width: 75%;
+    background-color: rgb(81, 109, 190);
+    text-align: center;
+    margin: 50px auto auto auto;
+    height: 600px;
+}
+
+#game_spot{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    column-gap: 1%;
+    row-gap: 2%;
+    margin-left: 180px;
+    /* margin-top: 5px; */
+}
+
+#box1{
+    background-color: rgb(235, 184, 140);
+    height: 140px;
+    
+}
+
+#box2{
+    background-color: rgb(235, 184, 140);
+    height: 140px;
+}
+
+#box3{
+    background-color: rgb(235, 184, 140);
+    height: 140px;
+}
+
+#box4{
+    background-color: rgb(235, 184, 140);
+    height: 140px;
+}
+
+#box5{
+    background-color: rgb(235, 184, 140);
+    height: 140px;
+}
+
+#box6{
+    background-color: rgb(235, 184, 140);
+    height: 140px;
+}
+
+#box7{
+    background-color: rgb(235, 184, 140);
+    height: 140px;
+}
+
+#box8{
+    background-color: rgb(235, 184, 140);
+    height: 140px;
+}
+
+#box9{
+    background-color: rgb(235, 184, 140);
+    height: 140px;
+}
+
+#footer{
+    margin: auto auto auto auto;
+}
+
+.players{
+    display: grid;
+    grid-template-columns: 10% 10%;
+    column-gap: 2%;
+    margin-top: -10px;
+}
+
+.player2{
+    margin-left: 670px;
+}
+
+.player1{
+    margin-left: 110px;
+}
+
+button{
+    margin-right: 700px;
+    margin-top: -700px;
+    background-color: rgb(235, 184, 140);
+    width: 50px;
+}
+

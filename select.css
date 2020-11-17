@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(235, 184, 140);
+    color: rgb(235, 184, 140);;
+}
+
+#my_div{
+    width: 75%;
+    background-color: rgb(81, 109, 190);
+    text-align: center;
+    margin: 50px auto auto auto;
+    height: 600px;
+}
+
+#play_with{
+    margin: 210px auto auto auto;
+}
+
+#footer{
+    margin: 130px auto auto auto;
+}
+
+button{
+    background-color: rgb(235, 184, 140);
+    border: ;
+    width: 80px;
+}
+
+h1{
+    margin-top: 50px;
+}
