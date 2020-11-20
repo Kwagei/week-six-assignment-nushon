@@ -1,6 +1,7 @@
 body{
     background-color: rgb(235, 184, 140);
-    color: rgb(235, 184, 140);;
+    color: rgb(235, 184, 140);
+    font-family: sans-serif;
 }
 
 #my_div{

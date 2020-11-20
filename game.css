@@ -1,6 +1,7 @@
 body{
     background-color: rgb(235, 184, 140);
-    color: rgb(235, 184, 140);;
+    color: rgb(235, 184, 140);
+    font-family: sans-serif;
 }
 
 #my_div{
@@ -11,7 +12,7 @@ body{
     height: 600px;
 }
 
-#game_spot{
+#gameGround{
     display: grid;
     grid-template-columns: 25% 25% 25%;
     column-gap: 1%;
@@ -20,10 +21,25 @@ body{
     /* margin-top: 5px; */
 }
 
-#box1{
+#winningMessage{
+    background-color: brown;
+    font-size: 50px;
+    color: black;
+}
+
+.cell{
+    font-size: 140px;
+}
+
+#box0{
     background-color: rgb(235, 184, 140);
     height: 140px;
     
+}
+
+#box1{
+    background-color: rgb(235, 184, 140);
+    height: 140px;
 }
 
 #box2{
@@ -61,11 +77,6 @@ body{
     height: 140px;
 }
 
-#box9{
-    background-color: rgb(235, 184, 140);
-    height: 140px;
-}
-
 #footer{
     margin: auto auto auto auto;
 }
@@ -78,11 +89,13 @@ body{
 }
 
 .player2{
-    margin-left: 670px;
+    margin-left: 600px;
+    
 }
 
 .player1{
-    margin-left: 110px;
+    margin-left: 190px;
+    
 }
 
 button{
@@ -92,3 +105,14 @@ button{
     width: 50px;
 }
 
+#gamePlayer1{
+    display: none;
+    font-size: 100px;
+    color: black;
+}
+
+#computerPlayer2{
+    display: none;
+    font-size: 100px;
+    color: black;
+}
