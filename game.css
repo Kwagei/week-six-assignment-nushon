@@ -4,12 +4,62 @@ body{
     font-family: sans-serif;
 }
 
-#my_div{
+/* select */
+#select{
     width: 75%;
     background-color: rgb(81, 109, 190);
     text-align: center;
     margin: 50px auto auto auto;
     height: 600px;
+    
+}
+
+#play_with{
+    
+    background-color: teal;
+    display: grid;
+    grid-template-columns: 25% 25%;
+    column-gap: 2%;
+    margin: 150px auto auto auto;
+    
+}
+
+#select_footer{
+    margin: 180px auto auto auto;
+}
+
+#heading{
+     width: 75%;
+    margin: 50px auto auto auto;
+    
+}
+
+#x_div{
+    margin: auto auto auto auto;
+}
+
+#o_div{
+    margin: auto auto auto auto;
+}
+
+
+
+
+
+
+
+/* game board */
+
+
+
+#game{
+    
+    width: 70%;
+    background-color: rgb(81, 109, 190);
+    text-align: center;
+    margin: 50px auto auto auto;
+    height: 600px;
+    display: none;
 }
 
 #gameGround{
@@ -17,7 +67,7 @@ body{
     grid-template-columns: 25% 25% 25%;
     column-gap: 1%;
     row-gap: 2%;
-    margin-left: 180px;
+    margin: auto auto auto 155px;
     /* margin-top: 5px; */
 }
 
@@ -85,7 +135,7 @@ body{
     display: grid;
     grid-template-columns: 10% 10%;
     column-gap: 2%;
-    margin-top: -10px;
+    margin: -10px auto auto auto;
 }
 
 .player2{
