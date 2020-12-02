@@ -1,67 +1,116 @@
-var gameField = document.querySelectorAll(".cell");
-Array.from(gameField).forEach(function(j){
-	j.addEventListener("click", function(l){
-		j.innerHTML = "X";
-		j.style = "font-size: 100px";
-		j.style = "color: black";
+var player1;
+var player2;
+var select_hide = document.getElementById ("select");
+
+function playWith(event){
+
+	console.log("event.target.innerHTML");
+	var selection = event.target.innerHTML;
+	console.log(selection);
+	
+	if(selection === "X") {
 		
+		player1 = selection
+		player2 = "O"
+	}else{
+		player1 = selection
+		player2 = "X"
+
+	}
+		game.style.display = "block";
+		select_hide.style.display = "none";
+}
+
+function backPage(){
+	select_hide.style.display = "block";
+	game.style.display = "none";
+	
+
+}
+
+
+var boxes = document.querySelectorAll(".cell");
+// console.log(boxes);
+Array.from(boxes).forEach(function (box) {
+	box.addEventListener("click", function (event) {
+		console.log(event.target);
+		event.target.innerHTML = player1;
+		box.style = "color: black";
+
 		generateRandomnumber();
-		
-		
+
+
 	})
 });
 
+
+
 function generateRandomnumber() {
-	var computerSelect = Math.floor(Math.random()*8)+0;
-	var a = gameField[computerSelect];
-	
-	if(a.innerHTML === ""){
-		a.innerHTML = "O";
+	var computerSelect = Math.floor(Math.random() * 8) + 0;
+	var a = boxes[computerSelect];
+
+	if (a.innerHTML === "") {
+		a.innerHTML = player2;
 		a.style = "font-size: 100px";
 		a.style = "color: black";
-		
+
 	}
 
 
-	else{
+	else {
 		generateRandomnumber();
 		return
 	}
-} 
-
-
-
-function results(){
-	if(box0 == box1 == box2){
-		document.getElementById("winningMessage").innerHTML = "You Win"
-		console.log(win);
-	}
-// 	}else if(box3 === box4 === box5){
-// 		document.getElementById("winningMessage").innerHTML = "You Win"
-
-// }else if(box6 === box7 === box8){
-// 	document.getElementById("winningMessage").innerHTML = "You Win"
-// }else if(box6 === box4 === box2){
-// 	document.getElementById("winningMessage").innerHTML = "You Win"
-// }else if(box0 === box3 === box6){
-// 	document.getElementById("winningMessage").innerHTML = "You Win"
-// }else if(box2 === box5 === box8){
-// 	document.getElementById("winningMessage").innerHTML = "You Win"
-// }else if(box0 === box4 === box8){
-// 	document.getElementById("winningMessage").innerHTML = "You Win"
-// }else if(box1 === box4 === box7){
-// 	document.getElementById("winningMessage").innerHTML = "You Win"
-// }
 }
-results();
 
+var winningMessage;
+var drawMessage;
 
+var winningConditions = [
+	[0, 1, 2],
+	[3, 4, 5],
+	[6, 7, 8],
+	[0, 3, 6],
+	[1, 4, 7],
+	[2, 5, 8],
+	[0, 4, 8],
+	[2, 4, 6],
 
+];
 
-function restart(){
-	var restart = document.querySelectorAll(".cell");
-	location.reload();
+function Result() {
 	
+	for (var i = 0; i < winningConditions.length; i++) {
+		var win = winningConditions[i];
+
+		
+		var e = win[0];
+		var b = win[1];
+		var c = win[2];
+		if (e === b && b === c) {
+			console.log(Win);
+			alert("You Win");
+			break;
+		}
+	}
+			
+	// 	}else if (e === b && b === c) {
+	// 		roundWon = true;
+	// 		alert("You Win");
+	// 		break;
+	// 	}
+	// }if (roundWon) {
+	// 	statusDisplay.innerHTML = winningMessage();
+	// 	gameActive = true;
+	// 	return;
+	// }
+	// let roundDraw = !game.gameState.includes("");
+	// if (roundWon) {
+	// 	statusDisplay.innerHTML = drawMessage();
+	// 	gameActive = false;
+	// 	return;
+	// }
+
 }
 
- 
+

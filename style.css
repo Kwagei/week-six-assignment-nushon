@@ -13,13 +13,21 @@ body{
 }
 
 #play_with{
-    margin: 210px auto auto auto;
+    margin: 100px auto auto auto;
+}
+
+#instructions{
+    width: 50%;
+    margin: 80px auto auto auto;
 }
 
 #footer{
-    margin: 210px auto auto auto;
+    margin: 150px auto auto auto;
 }
 
 button{
-    background-color: rgb(235, 184, 140);
+    background-color: rgb(81, 109, 190);
+    color: rgb(235, 184, 140);
+    border: ;
+    height: 30px;
 }
