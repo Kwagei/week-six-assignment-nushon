@@ -6,11 +6,8 @@ body{
 
 /* select */
 #select{
-<<<<<<< HEAD
     width: 65%;
-=======
     width: 75%;
->>>>>>> be94bc852a8a970e4c08bd3c18afefcaadba0eb4
     background-color: rgb(81, 109, 190);
     text-align: center;
     margin: 50px auto auto auto;
@@ -20,7 +17,7 @@ body{
 
 #play_with{
     
-<<<<<<< HEAD
+
     
     display: grid;
     grid-template-columns: 25% 25%;
@@ -34,16 +31,15 @@ body{
     margin-left: 375px;
 }
 
-=======
-    background-color: teal;
+    /* background-color: teal;
     display: grid;
     grid-template-columns: 25% 25%;
     column-gap: 2%;
     margin: 150px auto auto auto;
     
-}
+} */
 
->>>>>>> be94bc852a8a970e4c08bd3c18afefcaadba0eb4
+
 #select_footer{
     margin: 180px auto auto auto;
 }
@@ -197,6 +193,12 @@ button{
     
 }
 
+.player1win{
+    position: relative;
+    width: 50%;
+    margin: 100px auto auto 300px;
+}
+
 #win{
     display: none;
 }
@@ -209,7 +211,7 @@ button{
 
 #refresh{
     
-    margin-top: 550px;
+    margin-top: 400px;
     margin-left: 450px;
     display: grid;
     grid-template-columns: 25% 25%;

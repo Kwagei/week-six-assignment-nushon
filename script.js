@@ -19,19 +19,19 @@ function playWith(event){
 	}
 		game.style.display = "block";
 		select_hide.style.display = "none";
-<<<<<<< HEAD
+
 		win.style.display = "none";
-=======
->>>>>>> be94bc852a8a970e4c08bd3c18afefcaadba0eb4
+
+
 }
 
 function backPage(){
 	select_hide.style.display = "block";
 	game.style.display = "none";
-<<<<<<< HEAD
+ 
 	win.style.display = "none";
-=======
->>>>>>> be94bc852a8a970e4c08bd3c18afefcaadba0eb4
+
+
 	
 
 }
@@ -46,11 +46,9 @@ Array.from(boxes).forEach(function (box) {
 		box.style = "color: black";
 
 		generateRandomnumber();
-<<<<<<< HEAD
+
 		winner_X();
 		winner_O();
-=======
->>>>>>> be94bc852a8a970e4c08bd3c18afefcaadba0eb4
 
 
 	})
@@ -74,7 +72,7 @@ function generateRandomnumber() {
 		generateRandomnumber();
 		return
 	}
-<<<<<<< HEAD
+
 	winner_X();
 	winner_O();
 }
@@ -172,8 +170,8 @@ function restart(){
 	select_hide.style.display = "block";
 
 }
-=======
-}
+
+
 
 var winningMessage;
 var drawMessage;
@@ -226,4 +224,4 @@ function Result() {
 }
 
 
->>>>>>> be94bc852a8a970e4c08bd3c18afefcaadba0eb4
+
