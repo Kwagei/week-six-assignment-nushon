@@ -6,7 +6,7 @@ body{
 
 /* select */
 #select{
-    width: 75%;
+    width: 65%;
     background-color: rgb(81, 109, 190);
     text-align: center;
     margin: 50px auto auto auto;
@@ -20,13 +20,13 @@ body{
     display: grid;
     grid-template-columns: 25% 25%;
     column-gap: 2%;
-    margin: 100px auto auto 350px;
+    margin: 100px auto auto 270px;
     
 }
 
 #back_buttn {
     margin-top: 30px; 
-    margin-left: 450px;
+    margin-left: 375px;
 }
 
 #select_footer{
@@ -170,4 +170,48 @@ button{
     display: none;
     font-size: 100px;
     color: black;
+}
+
+.photo{
+    /* background-image: url(./images/win.jpg); */
+    /* opacity: 30%; */
+    width: 60%;
+    height: 60%;
+    margin: 100px auto auto 230px;
+    position: absolute;
+    
+}
+
+#win{
+    display: none;
+}
+
+.message{
+    color: black;
+    text-align: cente;
+    margin: auto auto auto 200px;
+}
+
+#refresh{
+    
+    margin-top: 550px;
+    margin-left: 450px;
+    display: grid;
+    grid-template-columns: 25% 25%;
+    column-gap: 2%;
+}
+
+.playAgain{
+    /* margin-top: 550px;
+    margin-left: 400px; */
+    width: 50%;
+    
+
+}
+
+.restart{
+    /* margin-top: -30px;
+    margin-left: 550px; */
+    width: 50%;
+
 }

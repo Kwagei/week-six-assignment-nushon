@@ -8,6 +8,8 @@
 </head>
 <body>
 
+    <div id="overAll">
+
     <!-- select -->
 
 
@@ -53,23 +55,23 @@
             <h1 id="heading1">Welcome To Tic-Tac-Toe District</h1>
         </div>
         <div class="players">
-            <div class="player1"><p>Player1</p></div>
-            <div class="player2"><p>Player2</p></div>
+            <div id="player1"><p>Player1: 0</p></div>
+            <div id="player2"><p>Player2: 0</p></div>
         </div>
 
         <!-- <h2 id="playerX">X</h2>
         <h2 id="playerO">O</h2> -->
 
         <div id="gameGround">
-            <div onclick="Result()" class="cell" id="box0"></div>
-            <div onclick="Result()" class="cell" id="box1"></div>
-            <div onclick="Result()" class="cell" id="box2"></div>
-            <div onclick="Result()" class="cell" id="box3"></div>
-            <div onclick="Result()" class="cell" id="box4"></div>
-            <div onclick="Result()" class="cell" id="box5"></div>
-            <div onclick="Result()" class="cell" id="box6"></div>
-            <div onclick="Result()" class="cell" id="box7"></div>
-            <div onclick="Result()" class="cell" id="box8"></div>
+            <div class="cell" id="box0"></div>
+            <div class="cell" id="box1"></div>
+            <div class="cell" id="box2"></div>
+            <div class="cell" id="box3"></div>
+            <div class="cell" id="box4"></div>
+            <div class="cell" id="box5"></div>
+            <div class="cell" id="box6"></div>
+            <div class="cell" id="box7"></div>
+            <div class="cell" id="box8"></div>
         </div>
         <div id="winningMessage">
 
@@ -89,6 +91,8 @@
 
         </div>  
 
+
+
         <div class="endgame">
             <div class="text"></div>
         </div>
@@ -103,6 +107,26 @@
         </div>
         
     </div>
+
+    </div>
+
+    <div id="win">
+        <div>
+        <img class="photo" src="./images/win.jpg" alt="Win photo">
+        </div>
+        <h2 class="message">Player1 Win</h2>
+
+        <div id="refresh">
+            <div>
+        <button class="playAgain" onclick="playAgain()">Play Again</button>
+            </div>
+            <div>
+        <button class="restart" onclick="restart()">Restart</button>
+            </div>
+        </div>
+
+    </div>
+
     
     
 
