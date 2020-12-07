@@ -199,6 +199,19 @@ button{
     margin: 100px auto auto 300px;
 }
 
+.computer_photo{
+    width: 60%;
+    height: 60%;
+    margin: 100px auto auto 230px;
+    position: absolute;
+}
+
+.computerwin{
+    position: relative;
+    width: 50%;
+    margin: 100px auto auto 300px;
+}
+
 #win{
     display: none;
 }

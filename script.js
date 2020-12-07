@@ -1,6 +1,7 @@
 var player1;
 var player2;
 var select_hide = document.getElementById ("select");
+var lose = document.getElementById("lose_display");
 
 function playWith(event){
 
@@ -115,7 +116,7 @@ function winner_X(){
 	win.style.display = "block";
 	select.style.display = "none";
 	game.style.display = "none";
-}else if(boxes[0].innerHTML === player1 && boxes[4].innerHTML === player1 && boxes[8].innerHTML === player1){
+}else if(boxes[8].innerHTML === player1 && boxes[4].innerHTML === player1 && boxes[0].innerHTML === player1){
 	console.log("win");
 	win.style.display = "block";
 	select.style.display = "none";
@@ -134,28 +135,52 @@ function winner_O(){
 	
 	if(boxes[0].innerHTML === player2 && boxes[1].innerHTML === player2 && boxes[2].innerHTML === player2){
 	console.log(" computer wins");
-	alert("computer wins");
+	lose.style.display = "block";
+	win.style.display = "none";
+	select.style.display = "none";
+	game.style.display = "none";
 }else if(boxes[3].innerHTML === player2 && boxes[4].innerHTML === player2 && boxes[5].innerHTML === player2){
 	console.log(" computer wins");
-	alert("computer wins");
+	lose.style.display = "block";
+	win.style.display = "none";
+	select.style.display = "none";
+	game.style.display = "none"
 }else if(boxes[6].innerHTML === player2 && boxes[7].innerHTML === player2 && boxes[8].innerHTML === player2){
 	console.log(" computer wins");
-	alert("computer wins");
+	lose.style.display = "block";
+	win.style.display = "none";
+	select.style.display = "none";
+	game.style.display = "none"
 }else if(boxes[0].innerHTML === player2 && boxes[3].innerHTML === player2 && boxes[6].innerHTML === player2){
 	console.log(" computer wins");
-	alert("computer wins");
+	lose.style.display = "block";
+	win.style.display = "none";
+	select.style.display = "none";
+	game.style.display = "none"
 }else if(boxes[1].innerHTML === player2 && boxes[4].innerHTML === player2 && boxes[7].innerHTML === player2){
 	console.log(" computer wins");
-	alert("computer wins");
+	lose.style.display = "block";
+	win.style.display = "none";
+	select.style.display = "none";
+	game.style.display = "none"
 }else if(boxes[2].innerHTML === player2 && boxes[5].innerHTML === player2 && boxes[8].innerHTML === player2){
 	console.log(" computer wins");
-	alert("computer wins");
+	lose.style.display = "block";
+	win.style.display = "none";
+	select.style.display = "none";
+	game.style.display = "none"
 }else if(boxes[0].innerHTML === player2 && boxes[4].innerHTML === player2 && boxes[8].innerHTML === player2){
 	console.log(" computer wins");
-	alert("computer wins");
+	lose.style.display = "block";
+	win.style.display = "none";
+	select.style.display = "none";
+	game.style.display = "none"
 }else if(boxes[2].innerHTML === player2 && boxes[4].innerHTML === player2 && boxes[6].innerHTML === player2){
 	console.log(" computer wins");
-	alert("computer wins");
+	lose.style.display = "block";
+	win.style.display = "none";
+	select.style.display = "none";
+	game.style.display = "none"
 }
 }
 
