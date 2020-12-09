@@ -1,6 +1,7 @@
 var boxes = document.querySelectorAll(".cell");
 var player1;
 var player2;
+var numberOfPlayer = 1;
 var select_hide = document.getElementById ("select");
 var lose = document.getElementById("lose_display");
 var home = document.getElementById("my_div");
@@ -50,11 +51,20 @@ Array.from(boxes).forEach(function (box) {
 		console.log(event.target);
 		event.target.innerHTML = player1;
 		box.style = "color: black";
-
-		generateRandomnumber();
+		if (numberOfPlayer === 1){
+			generateRandomnumber();
 
 		winner_X();
 		winner_O();
+		}else{
+			if(player1 === "X"){
+				player1 = "O"
+			}else{
+				player1 = "X";
+			}
+		}
+
+		
 
 
 	})
