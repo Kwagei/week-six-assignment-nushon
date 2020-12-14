@@ -5,10 +5,10 @@ body{
 }
 
 /* home */
-#heading{
+/* #heading{
    
    
-}
+} */
 
 #my_div{
     display: grid;
@@ -62,29 +62,43 @@ body{
 /* select */
 #select{
     display: none;
-    width: 65%;
+    
+    /* grid-template-columns: auto; */
     width: 75%;
     background-color: rgb(81, 109, 190);
     text-align: center;
     margin: 50px auto auto auto;
     height: 600px;
     
+    
+    
 }
+
+.pickPlayer{
+    margin: 30px auto auto auto;
+}
+
 
 #play_with{
     
 
+    background-color: thistle;
+    width: 50%;
     
     display: grid;
-    grid-template-columns: 25% 25%;
-    column-gap: 2%;
-    margin: 100px auto auto 270px;
+    grid-template-columns: 5% 5%;
+    column-gap: 1%;
+    margin: 200px auto auto 375px;
     
 }
 
 #back_buttn {
-    margin-top: 30px; 
-    margin-left: 375px;
+    margin: 80px auto auto 30px;
+    height: 30px; 
+    width: 20%;
+    border-radius: 5px;
+    /* margin-top: 30px; 
+    margin-left: 375px; */
 }
 
     /* background-color: teal;
@@ -97,14 +111,14 @@ body{
 
 
 #select_footer{
-    margin: 180px auto auto auto;
+    margin: 80px auto auto auto;
 }
 
-#heading{
+/* #heading{
      width: 75%;
-    margin: 50px auto auto auto;
+    margin: auto auto auto auto;
     
-}
+} */
 
 #x_div{
     margin: auto auto auto auto;

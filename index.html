@@ -25,10 +25,10 @@
                 <h3>How Do You Want To Play?</h3>
                 <div id="playerSelection">
                     <div>
-                <button class="singlePlayer" onclick="playerSelection()">One Player</button>
+                <button class="singlePlayer" id="player1Selection" onclick="playerSelection(event)">One Player</button>
                     </div>
                     <div>
-                <button class="multiPlayer" onclick="playerSelection()">Two Player</button>
+                <button class="multiPlayer" id="player2Selection"  onclick="playerSelection(event)">Two Player</button>
                     </div>
                 </div>
            
@@ -43,75 +43,76 @@
 
     <!-- select -->
 
+    <div class="first_select">
 
     <div id="select">
 
-        <div id="heading">
+        <!-- <div id="heading">
             <h1>Welcome To Tic-Tac-Toe District</h1>
-        </div>
+        </div> -->
 
-        <h3 style="margin-top: 80px;">Select A Player</h3>
+      
+   
+            <div class="pickPlayer">
+        <h2>Select A Player</h2>
+            </div>
 
       
 
         <div id="play_with">
            
             <div id="x_div">
-            <button id="btn1" onclick="playWith(event)" style="margin-left: 20px;">X</button>
+            <button id="btn1" onclick="playWith(event)" style="margin-left: auto; height: 40px; width: 80px; border-radius: 10px;">X</button>
             </div>
             <div id="o_div">
-            <button id="btn2" onclick="playWith(event)" style="margin-left: 30px;">O</button>
+            <button id="btn2" onclick="playWith(event)" style="margin-left: 60px; height: 40px;  width: 80px; border-radius: 10px;">O</button>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
+    
+    
 
-
+       <div style="background-color: aqua; width: 50%; margin: auto auto auto auto;">
         
-       <button style="margin-top: 30px; margin-left: 100px;">Back</button>
-
+       <button id="back_buttn">Back</button>
+       </div>
 
         <div id="select_footer">
             <h5>Power by: Mayo-INC</h5>
-            <p style="margin-top: -20px;">Copyright &copy;</p>
+            <p style="margin-top: -40;">Copyright &copy;</p>
         </div>
         
     </div>
 
-  
+    </div>
     
 
 
 <!-- Game board -->
     <div id="game">
 
-        <div id="heading">
+        <!-- <div id="heading">
             <h1 id="heading1">Welcome To Tic-Tac-Toe District</h1>
-        </div>
+        </div> -->
         <div class="players">
-            <div id="player1"><p>Player1: 0</p></div>
-            <div id="player2"><p>Player2: 0</p></div>
+            <div id="player1"><p>Player1: <span id="score1">0</span></p></div>
+            <div id="player2"><p>Player2: <span id="score2">0</span></p></div>
         </div>
 
         <!-- <h2 id="playerX">X</h2>
         <h2 id="playerO">O</h2> -->
 
         <div id="gameGround">
-            <div onclick="Result()" class="cell" id="box0"></div>
-            <div onclick="Result()" class="cell" id="box1"></div>
-            <div onclick="Result()" class="cell" id="box2"></div>
-            <div onclick="Result()" class="cell" id="box3"></div>
-            <div onclick="Result()" class="cell" id="box4"></div>
-            <div onclick="Result()" class="cell" id="box5"></div>
-            <div onclick="Result()" class="cell" id="box6"></div>
-            <div onclick="Result()" class="cell" id="box7"></div>
-            <div onclick="Result()" class="cell" id="box8"></div>
+            <div class="cell" id="box0"></div>
+            <div class="cell" id="box1"></div>
+            <div class="cell" id="box2"></div>
+            <div class="cell" id="box3"></div>
+            <div class="cell" id="box4"></div>
+            <div class="cell" id="box5"></div>
+            <div class="cell" id="box6"></div>
+            <div class="cell" id="box7"></div>
+            <div class="cell" id="box8"></div>
         </div>
-        <div id="winningMessage">
-
-        </div>
+        
 
         <div id="gamePlayer"> 
 
