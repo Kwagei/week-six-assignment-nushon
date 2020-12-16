@@ -1,0 +1,325 @@
+body{
+    background-color: rgb(235, 184, 140);
+    color: rgb(235, 184, 140);
+    font-family: sans-serif;
+}
+
+/* home */
+/* #heading{
+   
+   
+} */
+
+#my_div{
+    display: grid;
+    grid-template-columns: auto;
+    width: 75%;
+    background-color: rgb(81, 109, 190);
+    text-align: center;
+    margin: 50px auto auto auto;
+    height: 600px;
+}
+
+#play_with{
+    margin: auto auto auto auto;
+}
+
+#instructions{
+    width: 50%;
+    margin: auto auto auto auto;
+}
+
+#footer{
+    margin: 400px auto auto auto;
+}
+
+#playerSelection{
+    width: 25%;
+    display: grid;
+    grid-template-columns: 20% 20%;
+    column-gap: 20%;
+    margin: auto auto auto auto;
+}
+
+.singlePlayer{
+    width: 175%;
+    color: rgb(81, 109, 190);
+    background-color: rgb(235, 184, 140);
+    height: 30px;
+    margin: auto auto auto auto;
+}
+
+.multiPlayer{
+    width: 175%;
+    color: rgb(81, 109, 190);
+    background-color: rgb(235, 184, 140);
+    height: 30px;
+    margin: auto auto auto auto;
+}
+
+
+
+/* select */
+#select{
+    display: none;
+    
+    /* grid-template-columns: auto; */
+    width: 75%;
+    background-color: rgb(81, 109, 190);
+    text-align: center;
+    margin: 50px auto auto auto;
+    height: 600px;
+    
+    
+    
+}
+
+.pickPlayer{
+    margin: 30px auto auto auto;
+}
+
+
+#play_with{
+    
+
+    background-color: thistle;
+    width: 50%;
+    
+    display: grid;
+    grid-template-columns: 5% 5%;
+    column-gap: 1%;
+    margin: 200px auto auto 375px;
+    
+}
+
+#back_buttn {
+    margin: 80px auto auto 30px;
+    height: 30px; 
+    width: 20%;
+    border-radius: 5px;
+    /* margin-top: 30px; 
+    margin-left: 375px; */
+}
+
+    /* background-color: teal;
+    display: grid;
+    grid-template-columns: 25% 25%;
+    column-gap: 2%;
+    margin: 150px auto auto auto;
+    
+} */
+
+
+#select_footer{
+    margin: 80px auto auto auto;
+}
+
+/* #heading{
+     width: 75%;
+    margin: auto auto auto auto;
+    
+} */
+
+#x_div{
+    margin: auto auto auto auto;
+}
+
+#o_div{
+    margin: auto auto auto auto;
+}
+
+
+
+
+
+
+
+/* game board */
+
+
+
+#game{
+    
+    width: 70%;
+    background-color: rgb(81, 109, 190);
+    text-align: center;
+    margin: 50px auto auto auto;
+    height: 600px;
+    display: none;
+}
+
+#gameGround{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    column-gap: 1%;
+    row-gap: 2%;
+    margin: auto auto auto 155px;
+    /* margin-top: 5px; */
+}
+
+#winningMessage{
+    background-color: brown;
+    font-size: 50px;
+    color: black;
+}
+
+.cell{
+    font-size: 140px;
+}
+
+#box0{
+    background-color: rgb(235, 184, 140);
+    height: 140px;
+    
+}
+
+#box1{
+    background-color: rgb(235, 184, 140);
+    height: 140px;
+}
+
+#box2{
+    background-color: rgb(235, 184, 140);
+    height: 140px;
+}
+
+#box3{
+    background-color: rgb(235, 184, 140);
+    height: 140px;
+}
+
+#box4{
+    background-color: rgb(235, 184, 140);
+    height: 140px;
+}
+
+#box5{
+    background-color: rgb(235, 184, 140);
+    height: 140px;
+}
+
+#box6{
+    background-color: rgb(235, 184, 140);
+    height: 140px;
+}
+
+#box7{
+    background-color: rgb(235, 184, 140);
+    height: 140px;
+}
+
+#box8{
+    background-color: rgb(235, 184, 140);
+    height: 140px;
+}
+
+#footer{
+    margin: auto auto 50px auto;
+}
+
+.players{
+    display: grid;
+    grid-template-columns: 10% 10%;
+    column-gap: 2%;
+    margin: -10px auto auto auto;
+}
+
+.player2{
+    margin-left: 450px;
+    
+}
+
+.player1{
+    margin-left: 190px;
+    
+}
+
+button{
+    margin-right: 700px;
+    margin-top: -700px;
+    background-color: rgb(235, 184, 140);
+    width: 50px;
+}
+
+#gamePlayer1{
+    display: none;
+    font-size: 100px;
+    color: black;
+}
+
+#computerPlayer2{
+    display: none;
+    font-size: 100px;
+    color: black;
+}
+
+.photo{
+    /* background-image: url(./images/win.jpg); */
+    /* opacity: 30%; */
+    width: 60%;
+    height: 60%;
+    margin: 100px auto auto 230px;
+    position: absolute;
+    border-radius: 15px;
+    
+}
+
+.player1win{
+    position: relative;
+    width: 50%;
+    margin: 100px auto auto 300px;
+}
+
+.computer_photo{
+    width: 60%;
+    height: 60%;
+    margin: 100px auto auto 230px;
+    position: absolute;
+    border-radius: 15px;
+}
+
+.computerwin{
+    position: relative;
+    width: 50%;
+    margin: 100px auto auto 300px;
+}
+
+#lose_display{
+    display: none;
+}
+
+#win{
+    display: none;
+}
+
+.message{
+    color: black;
+    text-align: cente;
+    margin: auto auto auto 200px;
+}
+
+#refresh{
+    
+    margin-top: 400px;
+    margin-left: 500px;
+    display: grid;
+    grid-template-columns: 15% 15%;
+    column-gap: 2%;
+}
+
+.playAgain{
+    /* margin-top: 550px;
+    margin-left: 400px; */
+    width: 90%;
+    border-radius: 5px;
+    
+
+}
+
+.restart{
+    /* margin-top: -30px;
+    margin-left: 550px; */
+    width: 90%;
+    border-radius: 5px;
+
+}
