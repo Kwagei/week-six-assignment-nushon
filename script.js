@@ -6,6 +6,7 @@ var box_counter = 0;
 // var scoreBoard = 0;
 var Player1Score_counter = 0;
 var Player2Score_counter = 0;
+let winCheck = false;
 
 var select_hide = document.getElementById ("select");
 var lose = document.getElementById("lose_display");
@@ -74,23 +75,31 @@ Array.from(boxes).forEach(function (box) {
 		box.style = "color: black";
 		console.log(numberOfPlayer);
 
-		if (numberOfPlayer === 1){
-			generateRandomnumber();
+		winStatement()
+		
 
+		if (numberOfPlayer === 1 && winCheck === false){
+			console.log("We knw");
+			generateRandomnumber()
+			
+			
 		
 		}
 		else{
 			if(player1 === "X"){
 				player1 = "O"
+				winStatement()
 			}else{
 				player1 = "X";
+				winStatement()
 			}
 		}
 
-		winStatement()
+		
 		
 		
 
+		
 		
 
 
@@ -146,6 +155,7 @@ function winStatement(){
 	Player1Score_counter += 1;
 	document.getElementById("score1").innerHTML = Player1Score_counter;
 	console.log("Player1Score_counter");
+	winCheck = true;
 	
 	
 	
@@ -159,6 +169,7 @@ function winStatement(){
 	Player1Score_counter += 1;
 	document.getElementById("score1").innerHTML = Player1Score_counter;
 	console.log(Player1Score_counter);
+	winCheck = true;
 }else if(boxes[6].innerHTML === player1 && boxes[7].innerHTML === player1 && boxes[8].innerHTML === player1){
 	console.log("win");
 	win.style.display = "block";
@@ -167,6 +178,7 @@ function winStatement(){
 	home.style.display = "none";
 	Player1Score_counter++;
 	document.getElementById("score1").innerHTML = Player1Score_counter;
+	winCheck = true;
 }else if(boxes[0].innerHTML === player1 && boxes[3].innerHTML === player1 && boxes[6].innerHTML === player1){
 	console.log("win");
 	win.style.display = "block";
@@ -175,6 +187,7 @@ function winStatement(){
 	home.style.display = "none";
 	Player1Score_counter++;
 	document.getElementById("score1").innerHTML = Player1Score_counter;
+	winCheck = true;
 }else if(boxes[1].innerHTML === player1 && boxes[4].innerHTML === player1 && boxes[7].innerHTML === player1){
 	console.log("win");
 	win.style.display = "block";
@@ -183,13 +196,16 @@ function winStatement(){
 	home.style.display = "none";
 	Player1Score_counter++;
 	document.getElementById("score1").innerHTML = Player1Score_counter;
+	winCheck = true;
 }else if(boxes[2].innerHTML === player1 && boxes[5].innerHTML === player1 && boxes[8].innerHTML === player1){
 	console.log("win");
 	win.style.display = "block";
 	select.style.display = "none";
 	game.style.display = "none";
 	home.style.display = "none";
-	Player1Score ++;
+	Player1Score_counter ++;
+	document.getElementById("score1").innerHTML = Player1Score_counter;
+	winCheck = true;
 }else if(boxes[8].innerHTML === player1 && boxes[4].innerHTML === player1 && boxes[0].innerHTML === player1){
 	console.log("win");
 	win.style.display = "block";
@@ -198,6 +214,7 @@ function winStatement(){
 	home.style.display = "none";
 	Player1Score_counter++;
 	document.getElementById("score1").innerHTML = Player1Score_counter;
+	winCheck = true;
 }else if(boxes[2].innerHTML === player1 && boxes[4].innerHTML === player1 && boxes[6].innerHTML === player1){
 	console.log("win");
 	win.style.display = "block";
@@ -206,6 +223,7 @@ function winStatement(){
 	home.style.display = "none";
 	Player1Score_counter++;
 	document.getElementById("score1").innerHTML = Player1Score_counter;
+	winCheck = true;
 
 	// Player2 win statement
 					
