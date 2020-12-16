@@ -45,7 +45,7 @@ function backPage(){
 
 function playerSelection(event){
 	var player_selection_id = event.target.id;
-	// console.log("hfhfhfh", event.target.id);
+	console.log("hfhfhfh", event.target.id);
 	home.style.display = "none";
 	select_hide.style.display = "block";
 	console.log(player_selection_id);
@@ -55,6 +55,8 @@ function playerSelection(event){
 		numberOfPlayer = 2;
 		
 	}
+	winStatement()
+	console.log("wonnn");
 console.log("Player2", numberOfPlayer);
    
 
@@ -88,7 +90,7 @@ Array.from(boxes).forEach(function (box) {
 		winStatement()
 		
 		
-		
+
 		
 
 
@@ -123,7 +125,6 @@ function generateRandomnumber() {
 		    return
 
 		}
-		
 		
 	}
 
@@ -297,35 +298,20 @@ function winStatement(){
 		alert("Draw");
 		console.log("draw");
 
+		playAgain()
 	}
 	
-	
 }
 }
-// function draw(){
-	
-// 	for (var i = 0; i < boxes.length; i++){
-// 		if(boxes[i].innerHTML !== "" && box_counter > boxes.length){
-// 			console.log (draw);
-// 		}
-// 	}
-// }
+
 
 function playAgain(){
-	// console.log("plsa ", Player1Score_counter += 1);
 	box_counter = 0;
 	win.style.display = "none";
+	lose.style.display = "none";
 	game.style.display = "block";
 	for(i = 0; i < boxes.length; i++){
 		boxes[i].innerHTML = "";
 	}
-
-
-}
-
-function restart(){
-	win.style.display = "none";
-	select_hide.style.display = "block";
-	location.reload();
 
 }

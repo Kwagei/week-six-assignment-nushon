@@ -11,6 +11,8 @@
 
 
         <div id="my_div">
+            <br>
+            
 
     
             <div id="heading" >
@@ -31,7 +33,7 @@
                 <button class="multiPlayer" id="player2Selection"  onclick="playerSelection(event)">Two Player</button>
                     </div>
                 </div>
-           
+          
     
             <div id="footer" style="margin: auto auto auto auto;">
                 <h5>Power by: Mayo-INC</h5>
@@ -54,7 +56,10 @@
       
    
             <div class="pickPlayer">
-        <h2>Select A Player</h2>
+                <br>
+                <br>
+                <br>
+        <h2 style="margin: auto auto -30px auto;">Select A Player</h2>
             </div>
 
       
@@ -62,23 +67,27 @@
         <div id="play_with">
            
             <div id="x_div">
-            <button id="btn1" onclick="playWith(event)" style="margin-left: auto; height: 40px; width: 80px; border-radius: 10px;">X</button>
+            <button id="btn1" onclick="playWith(event)">X</button>
             </div>
             <div id="o_div">
-            <button id="btn2" onclick="playWith(event)" style="margin-left: 60px; height: 40px;  width: 80px; border-radius: 10px;">O</button>
+            <button id="btn2" onclick="playWith(event)">O</button>
             </div>
         </div>
     
     
 
-       <div style="background-color: aqua; width: 50%; margin: auto auto auto auto;">
+       <div style="width: 50%; margin: auto auto auto auto;">
         
-       <button id="back_buttn">Back</button>
+       <button id="back_buttn" style=" font-size: 20px;" onclick="location.reload()">Back</button>
        </div>
+       <br>
+       <br>
+       <br>
+       <br>
 
         <div id="select_footer">
             <h5>Power by: Mayo-INC</h5>
-            <p style="margin-top: -40;">Copyright &copy;</p>
+            <p style="margin: auto auto 40px auto;">Copyright &copy;</p>
         </div>
         
     </div>
@@ -94,8 +103,8 @@
             <h1 id="heading1">Welcome To Tic-Tac-Toe District</h1>
         </div> -->
         <div class="players">
-            <div id="player1"><p>Player1: <span id="score1">0</span></p></div>
-            <div id="player2"><p>Player2: <span id="score2">0</span></p></div>
+            <div id="player1"><p><b>Player1 :  </b> <span id="score1"><b>0</b></span></p></div>
+            <div id="player2"><p><b>Player2 :  </b> <span id="score2"><b>0</b></span></p></div>
         </div>
 
         <!-- <h2 id="playerX">X</h2>
@@ -133,10 +142,10 @@
         <div class="endgame">
             <div class="text"></div>
         </div>
-        <button onclick="restart()" id="restart">Restart</button>
+        <button onclick="location.reload()" id="restart"><b>Restart</b></button>
     
 
-       <button onclick="backPage()">Back</button>
+       <button onclick="playAgain()" id="playagain"><b>Play Again</b></button>
 
         <div id="footer">
             <h5>Power by: Mayo-INC</h5>
@@ -159,7 +168,7 @@
         <button class="playAgain" onclick="playAgain()">Play Again</button>
             </div>
             <div>
-        <button class="restart" onclick="restart()">Restart</button>
+        <button class="restart" onclick="location.reload()">Restart</button>
             </div>
         </div>
 
@@ -173,10 +182,10 @@
             </div>
             <div id="refresh">
                 <div>
-            <button class="playAgain" onclick="playAgain()">Play Again</button>
+            <button class="playAgain" onclick="playAgain()"><b>Play Again</b></button>
                 </div>
                 <div>
-            <button class="restart" onclick="restart()">Restart</button>
+            <button class="restart" onclick="location.reload()"><b>Restart</b></button>
                 </div>
             </div>
     
