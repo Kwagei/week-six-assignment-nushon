@@ -49,6 +49,7 @@ body{
     height: 40px;
     margin: auto 10px auto auto;
     font-size: 15px;
+    
 }
 
 .singlePlayer:hover{
@@ -299,7 +300,7 @@ button{
 #restart{
     width: 10%;
     height: 30px;
-    margin: auto auto auto auto;
+    margin: 20px auto auto auto;
     color: rgb(81, 109, 190);
 }
 

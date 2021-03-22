@@ -75,16 +75,15 @@ Array.from(boxes).forEach(function (box) {
 		box.style = "color: black";
 		console.log(numberOfPlayer);
 
-		winStatement()
+		winStatement();
 		
 
 		if (numberOfPlayer === 1 && winCheck === false){
 			console.log("We knw");
-			generateRandomnumber()
-			
-			
+			generateRandomnumber();
 		
 		}
+	
 		else{
 			if(player1 === "X"){
 				player1 = "O"
@@ -130,8 +129,8 @@ function generateRandomnumber() {
 	else {
 		console.log("error");
 		if(box_counter < 9){
-			generateRandomnumber();
-		    return
+			return	generateRandomnumber();
+		   
 
 		}
 		
@@ -331,5 +330,6 @@ function playAgain(){
 	for(i = 0; i < boxes.length; i++){
 		boxes[i].innerHTML = "";
 	}
+
 
 }
